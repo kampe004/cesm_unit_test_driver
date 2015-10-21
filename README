@@ -1,0 +1,12 @@
+The files in here can be copied (or linked) to the (CLM) directory containing
+the top-level CMakeLists.txt file for unit tests. Then unit tests can be run on
+my local machine (roo2) using:
+
+make -j 4 -f Makefile.utest config
+make -j 4 -f Makefile.utest test
+
+For unit tests not run out of CLM, also need to specify CESM_ROOT_RELPATH, as
+in:
+
+make -j 4 -f Makefile.utest CESM_ROOT_RELPATH=../.. config
+make -j 4 -f Makefile.utest CESM_ROOT_RELPATH=../.. test
