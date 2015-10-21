@@ -7,7 +7,7 @@
 # pFUnit location.
 # ==================================================
 
-list(APPEND CMAKE_PREFIX_PATH /usr/local/pfunit/pfunit-mpi)
+list(APPEND CMAKE_PREFIX_PATH /Users/leo/pFUnit_MPI_install )
 include(Compilers)
 
 # ==================================================
@@ -19,8 +19,8 @@ set(NETCDF_DIR "/usr/local")
 # The following is a hack to get cmake to link in hdf5, because there does not
 # appear to be a find package script for hdf5:
 set(CMAKE_EXE_LINKER_FLAGS "-lhdf5_hl")
-include_directories("/usr/local/include")
-link_directories("/usr/local/lib")
+include_directories("/opt/local/include")
+link_directories("/opt/local/lib")
 # The following commented out lines did not work in terms of finding an hdf5 library:
 # set(HDF5_DIR "/usr/local")
 # set(CMAKE_PREFIX_PATH "/usr/local")

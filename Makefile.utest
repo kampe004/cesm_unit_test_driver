@@ -9,8 +9,8 @@ CESM_ROOT := $(TEST_ROOT)/$(CESM_ROOT_RELPATH)
 
 CESM_CMAKE_UTILS=$(CESM_ROOT)/cime/externals/CMake
 GENF90=$(CESM_ROOT)/cime/externals/genf90
-PFUNIT=/usr/local/pfunit/pfunit-mpi
-FC=mpif90
+PFUNIT=/Users/leo/pFUnit_MPI_install/
+FC=mpif90-openmpi-mp
 
 DEBUG_CMAKE=
 #DEBUG_CMAKE=--debug-output --trace
